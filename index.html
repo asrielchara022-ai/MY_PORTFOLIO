@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PORTFOLIO</title>
   <style>
     body {
@@ -45,6 +47,7 @@
       background-color: #ccc;
       cursor: not-allowed;
     }
+
     /* เอนิเมชั่น */
     /* animation เข้า */
     @keyframes slideIn {
@@ -52,29 +55,31 @@
         opacity: 0;
         transform: translateX(50px);
       }
+
       to {
         opacity: 1;
         transform: translateX(0);
       }
     }
-    
+
     /* animation ออก */
     @keyframes slideOut {
       from {
         opacity: 1;
         transform: translateX(0);
       }
+
       to {
         opacity: 0;
         transform: translateX(-50px);
       }
     }
-    
+
     /* เพิ่มคลาสสำหรับ animation */
     .animate-in {
       animation: slideIn 0.5s ease-out forwards;
     }
-    
+
     .animate-out {
       animation: slideOut 0.5s ease-out forwards;
     }
@@ -95,11 +100,13 @@
       border-radius: 0;
       box-shadow: none;
     }
+
     .left {
       background: #f0e6dc;
       padding: 20px;
       text-align: center;
     }
+
     .profile-img {
       width: 150px;
       height: 150px;
@@ -108,14 +115,17 @@
       border: 5px solid #fff;
       margin-bottom: 15px;
     }
+
     h2 {
       margin: 10px 0 5px;
       color: #333;
     }
+
     h3 {
       margin: 10px 0;
       color: #6a3d2e;
     }
+
     .title {
       background: #6a3d2e;
       color: #fff;
@@ -124,31 +134,39 @@
       display: inline-block;
       margin: 10px 0;
     }
+
     .section1 {
       margin-bottom: 20px;
       text-align: left;
     }
-    .section p, .section li {
+
+    .section p,
+    .section li {
       font-size: 14px;
       line-height: 1.6;
     }
+
     ul {
       padding-left: 20px;
     }
+
     .right {
       padding: 20px 30px;
     }
+
     .bar {
       background: #ddd;
       border-radius: 20px;
       overflow: hidden;
       margin: 5px 0 15px;
     }
+
     .bar-fill {
       height: 12px;
       border-radius: 20px;
       background: #6a3d2e;
     }
+
     .skill {
       display: flex;
       justify-content: space-between;
@@ -165,188 +183,244 @@
 
     /* หน้า 4 */
 
-    .work-photos{
-      transform: rotate(0deg) translate(0px, -1100px); /* x = ขวา, y = ล่าง */
+    .work-photos {
+      transform: rotate(0deg) translate(0px, -1100px);
+      /* x = ขวา, y = ล่าง */
     }
 
-    .work-photos-one{
+    .work-photos-one {
       width: 500px;
       color: #000000;
       background-color: #f19e6d;
       border-radius: 50px;
       font-size: 30px;
       text-align: center;
-      transform: rotate(0deg) translate(150px, -1400px); /* x = ขวา, y = ล่าง */
+      transform: rotate(0deg) translate(150px, -1400px);
+      /* x = ขวา, y = ล่าง */
     }
 
-    .work-photos-two-one{
+    .work-photos-two-one {
       width: 520px;
       color: #000000;
       background-color: #f19e6d;
       border-radius: 50px;
       font-size: 20px;
       text-align: center;
-      transform: rotate(0deg) translate(130px, -1700px); /* x = ขวา, y = ล่าง */
+      transform: rotate(0deg) translate(130px, -1700px);
+      /* x = ขวา, y = ล่าง */
     }
 
-    .work-photos-two-two{
+    .work-photos-two-two {
       width: 520px;
       color: #000000;
       background-color: #f19e6d;
       border-radius: 50px;
       font-size: 20px;
       text-align: center;
-      transform: rotate(0deg) translate(130px, -1265px); /* x = ขวา, y = ล่าง */
+      transform: rotate(0deg) translate(130px, -1265px);
+      /* x = ขวา, y = ล่าง */
     }
 
-    .work-photos-three-one{
+    .work-photos-three-one {
       width: 520px;
       color: #000000;
       background-color: #f19e6d;
       border-radius: 50px;
       font-size: 20px;
       text-align: center;
-      transform: rotate(0deg) translate(130px, -1750px); /* x = ขวา, y = ล่าง */
-      }
+      transform: rotate(0deg) translate(130px, -1750px);
+      /* x = ขวา, y = ล่าง */
+    }
 
-    .work-photos-three-two{
+    .work-photos-three-two {
       width: 520px;
       color: #000000;
       background-color: #f19e6d;
       border-radius: 50px;
       font-size: 20px;
       text-align: center;
-      transform: rotate(0deg) translate(130px, -1330px); /* x = ขวา, y = ล่าง */
-      }
+      transform: rotate(0deg) translate(130px, -1330px);
+      /* x = ขวา, y = ล่าง */
+    }
 
-    .work-photos-four-one{
+    .work-photos-four-one {
       width: 520px;
       color: #000000;
       background-color: #f19e6d;
       border-radius: 50px;
       font-size: 20px;
       text-align: center;
-      transform: rotate(0deg) translate(130px, -1690px); /* x = ขวา, y = ล่าง */
-      }
+      transform: rotate(0deg) translate(130px, -1690px);
+      /* x = ขวา, y = ล่าง */
+    }
 
-    .work-photos-four-two{
+    .work-photos-four-two {
       width: 520px;
       color: #000000;
       background-color: #f19e6d;
       border-radius: 50px;
       font-size: 20px;
       text-align: center;
-      transform: rotate(0deg) translate(130px, -1255px); /* x = ขวา, y = ล่าง */
-      }
+      transform: rotate(0deg) translate(130px, -1255px);
+      /* x = ขวา, y = ล่าง */
+    }
 
-    .work-photos-five-one{
+    .work-photos-five-one {
       width: 220px;
       color: #000000;
       background-color: #f19e6d;
       border-radius: 30px;
       font-size: 30px;
       text-align: center;
-      transform: rotate(0deg) translate(500px, -1920px); /* x = ขวา, y = ล่าง */
-      }
+      transform: rotate(0deg) translate(500px, -1920px);
+      /* x = ขวา, y = ล่าง */
+    }
 
-    .work-photos-five-two{
+    .work-photos-five-two {
       width: 520px;
       color: #000000;
       background-color: #f19e6d;
       border-radius: 50px;
       font-size: 25px;
       text-align: center;
-      transform: rotate(0deg) translate(130px, -1380px); /* x = ขวา, y = ล่าง */
-      }
+      transform: rotate(0deg) translate(130px, -1380px);
+      /* x = ขวา, y = ล่าง */
+    }
 
-    .work-photos-six-one{
+    .work-photos-six-one {
       width: 520px;
       color: #000000;
       background-color: #f19e6d;
       border-radius: 50px;
       font-size: 25px;
       text-align: center;
-      transform: rotate(0deg) translate(130px, -1680px); /* x = ขวา, y = ล่าง */
-      }
+      transform: rotate(0deg) translate(130px, -1680px);
+      /* x = ขวา, y = ล่าง */
+    }
 
-    .work-photos-six-two{
+    .work-photos-six-two {
       width: 520px;
       color: #000000;
       background-color: #f19e6d;
       border-radius: 50px;
       font-size: 25px;
       text-align: center;
-      transform: rotate(0deg) translate(130px, -1310px); /* x = ขวา, y = ล่าง */
-      }
+      transform: rotate(0deg) translate(130px, -1310px);
+      /* x = ขวา, y = ล่าง */
+    }
 
-    .work-photos-seven{
+    .work-photos-seven {
       width: 520px;
       color: #000000;
       background-color: #f19e6d;
       border-radius: 50px;
       font-size: 25px;
       text-align: center;
-      transform: rotate(0deg) translate(130px, -1290px); /* x = ขวา, y = ล่าง */
-      }
+      transform: rotate(0deg) translate(130px, -1290px);
+      /* x = ขวา, y = ล่าง */
+    }
 
 
-      .background-1{
+    .background-1 {
       width: 560px;
       height: 670px;
       background-color: #daa485;
       border-radius: 50px;
       border: 5px solid #49362c;
-      transform: rotate(0deg) translate(110px, -900px); /* x = ขวา, y = ล่าง */    
-      }
+      transform: rotate(0deg) translate(110px, -900px);
+      /* x = ขวา, y = ล่าง */
+    }
 
-      .explain{
+    .explain {
       width: 520px;
       font-size: 25px;
       color: #49362c;
-      transform: rotate(0deg) translate(130px, -1550px); /* x = ขวา, y = ล่าง */
+      transform: rotate(0deg) translate(130px, -1550px);
+      /* x = ขวา, y = ล่าง */
+    }
+
+    .reason {
+      width: 520px;
+      font-size: 50px;
+      color: #d15614;
+      transform: rotate(0deg) translate(140px, -2260px);
+      /* x = ขวา, y = ล่าง */
+    }
+
+    .decorate-three {
+      transform: rotate(0deg) translate(0px, -2260px);
+      /* x = ขวา, y = ล่าง */
+    }
+
+    .decorate-four {
+      transform: rotate(0deg) translate(80px, -2460px);
+      /* x = ขวา, y = ล่าง */
+    }
+
+    .decorate-five {
+      transform: rotate(0deg) translate(0px, -2280px);
+      /* x = ขวา, y = ล่าง */
+    }
+
+    .decorate-six {
+      transform: rotate(0deg) translate(100px, -2300px);
+      /* x = ขวา, y = ล่าง */
+    }
+
+    .decorate-seven {
+      transform: rotate(0deg) translate(-10px, -2320px);
+      /* x = ขวา, y = ล่าง */
+    }
+
+    .decorate-eight {
+      transform: rotate(0deg) translate(100px, -2300px);
+      /* x = ขวา, y = ล่าง */
+    }
+
+    .decorate-ten {
+      transform: rotate(0deg) translate(0px, -2280px);
+      /* x = ขวา, y = ล่าง */
+    }
+
+    .decorate-eleven {
+      transform: rotate(0deg) translate(0px, -2260px);
+      /* x = ขวา, y = ล่าง */
+    }
+
+    /* ===== มือถือ ===== */
+    @media (max-width: 768px) {
+
+      body {
+        margin: 0;
+        padding: 10px;
       }
 
-      .reason{
-        width: 520px;
-        font-size: 50px;
-        color: #d15614;
-        transform: rotate(0deg) translate(140px, -2260px); /* x = ขวา, y = ล่าง */
+      .a4-page {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 210/297;
+        overflow: hidden;
       }
 
-      .decorate-three{
-        transform: rotate(0deg) translate(0px, -2260px); /* x = ขวา, y = ล่าง */
+      img {
+        max-width: 100%;
+        height: auto;
       }
 
-      .decorate-four{
-        transform: rotate(0deg) translate(80px, -2460px); /* x = ขวา, y = ล่าง */
+      .button-group {
+        position: fixed;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        background: #f5f5f5;
+        padding: 10px;
       }
 
-      .decorate-five{
-        transform: rotate(0deg) translate(0px, -2280px); /* x = ขวา, y = ล่าง */
-      }
-
-      .decorate-six{
-        transform: rotate(0deg) translate(100px, -2300px); /* x = ขวา, y = ล่าง */
-      }
-
-      .decorate-seven{
-        transform: rotate(0deg) translate(-10px, -2320px); /* x = ขวา, y = ล่าง */
-      }
-
-      .decorate-eight{
-        transform: rotate(0deg) translate(100px, -2300px); /* x = ขวา, y = ล่าง */
-      }
-
-      .decorate-ten{
-        transform: rotate(0deg) translate(0px, -2280px); /* x = ขวา, y = ล่าง */
-      }
-
-      .decorate-eleven{
-        transform: rotate(0deg) translate(0px, -2260px); /* x = ขวา, y = ล่าง */
-      }
-
+    }
   </style>
 </head>
+
 <body>
 
   <!-- หน้ากระดาษ A4 -->
@@ -359,71 +433,84 @@
 
   <!-- หน้า 1 -->
   <div id="page2" class="a4-page">
-  <div class="container">
-    <!-- LEFT -->
-    <div class="left">
-      <img src="pf1.jpg" alt="profile" class="profile-img">
-      <h3>นายกฤตเมธ โสภณปุณณากร</h3>
-      <p>ชื่อเล่น : เอส(S)</p>
-      <h3 class="title">Graphic Design</h3>
+    <div class="container">
+      <!-- LEFT -->
+      <div class="left">
+        <img src="pf1.jpg" alt="profile" class="profile-img">
+        <h3>นายกฤตเมธ โสภณปุณณากร</h3>
+        <p>ชื่อเล่น : เอส(S)</p>
+        <h3 class="title">Graphic Design</h3>
 
-      <div class="section">
-        <h3>Contact</h3>
-        <p>📍 บ้านเลขที่ 7/10 หมู่ 12 ต.แม่สลองนอก อ.แม่ฟ้าหลวง จ.เชียงราย</p>
-        <p>📧 asrielchara022@gmail.com</p>
-        <p>📱 065-038-0818</p>
-        <p>Facebook: ตั้งชื่อเหรอ ไม่จำเป็นหรอก</p>
-        <p>Line: meamade022</p>
+        <div class="section">
+          <h3>Contact</h3>
+          <p>📍 บ้านเลขที่ 7/10 หมู่ 12 ต.แม่สลองนอก อ.แม่ฟ้าหลวง จ.เชียงราย</p>
+          <p>📧 asrielchara022@gmail.com</p>
+          <p>📱 065-038-0818</p>
+          <p>Facebook: ตั้งชื่อเหรอ ไม่จำเป็นหรอก</p>
+          <p>Line: meamade022</p>
+        </div>
+      </div>
+
+      <!-- RIGHT -->
+      <div class="right">
+        <h2>RESUME</h2>
+
+        <div class="section">
+          <h3>About Me</h3>
+          <p class="section-mine">สวัสดีครับ ผมชื่อกฤตเมธ โสภณปุณณากร บางครั้งผมอาจจัดการเวลาได้ไม่ดีนัก
+            แต่สิ่งนี้ทำให้ดิฉันพยายามปรับปรุงตัวเอง โดยเริ่มฝึกการวางแผนล่วงหน้าและรับผิดชอบต่อเวลาให้มากขึ้น</p>
+        </div>
+
+        <div class="section">
+          <h3>Hobby</h3>
+          <ul>
+            <li>ฟังเพลง / ดูหนัง</li>
+            <li>เล่นเกม</li>
+            <li>ฝึกฝนเขียนโค๊ด</li>
+            <li>ตัดต่อวิดีโอ</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h3>Education</h3>
+          <p>🏫 โรงเรียนสันติคีรีวิทยาคม จ.เชียงราย</p>
+          <p>กำลังศึกษาอยู่ปีที่ 6</p>
+        </div>
+
+        <div class="section">
+          <h3>Skills</h3>
+          <div class="skill"><span>การทำงานเป็นทีม</span><span>97%</span></div>
+          <div class="bar">
+            <div class="bar-fill" style="width:97%"></div>
+          </div>
+
+          <div class="skill"><span>การจัดการเวลา</span><span>83%</span></div>
+          <div class="bar">
+            <div class="bar-fill" style="width:83%"></div>
+          </div>
+
+          <div class="skill"><span>การแก้ปัณหาเฉพาะหน้า</span><span>90%</span></div>
+          <div class="bar">
+            <div class="bar-fill" style="width:90%"></div>
+          </div>
+
+          <div class="skill"><span>การสือสาร</span><span>85%</span></div>
+          <div class="bar">
+            <div class="bar-fill" style="width:85%"></div>
+          </div>
+
+          <div class="skill"><span>การเรียนรู้</span><span>82%</span></div>
+          <div class="bar">
+            <div class="bar-fill" style="width:82%"></div>
+          </div>
+
+          <div class="skill"><span>มนุษย์สัมพันธ์</span><span>90%</span></div>
+          <div class="bar">
+            <div class="bar-fill" style="width:90%"></div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- RIGHT -->
-    <div class="right">
-      <h2>RESUME</h2>
-
-      <div class="section">
-        <h3>About Me</h3>
-        <p class="section-mine">สวัสดีครับ ผมชื่อกฤตเมธ โสภณปุณณากร บางครั้งผมอาจจัดการเวลาได้ไม่ดีนัก แต่สิ่งนี้ทำให้ดิฉันพยายามปรับปรุงตัวเอง โดยเริ่มฝึกการวางแผนล่วงหน้าและรับผิดชอบต่อเวลาให้มากขึ้น</p>
-      </div>
-
-      <div class="section">
-        <h3>Hobby</h3>
-        <ul>
-          <li>ฟังเพลง / ดูหนัง</li>
-          <li>เล่นเกม</li>
-          <li>ฝึกฝนเขียนโค๊ด</li>
-          <li>ตัดต่อวิดีโอ</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h3>Education</h3>
-        <p>🏫 โรงเรียนสันติคีรีวิทยาคม จ.เชียงราย</p>
-        <p>กำลังศึกษาอยู่ปีที่ 6</p>
-      </div>
-
-      <div class="section">
-        <h3>Skills</h3>
-        <div class="skill"><span>การทำงานเป็นทีม</span><span>97%</span></div>
-        <div class="bar"><div class="bar-fill" style="width:97%"></div></div>
-
-        <div class="skill"><span>การจัดการเวลา</span><span>83%</span></div>
-        <div class="bar"><div class="bar-fill" style="width:83%"></div></div>
-
-        <div class="skill"><span>การแก้ปัณหาเฉพาะหน้า</span><span>90%</span></div>
-        <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
-
-        <div class="skill"><span>การสือสาร</span><span>85%</span></div>
-        <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
-
-        <div class="skill"><span>การเรียนรู้</span><span>82%</span></div>
-        <div class="bar"><div class="bar-fill" style="width:82%"></div></div>
-
-        <div class="skill"><span>มนุษย์สัมพันธ์</span><span>90%</span></div>
-        <div class="bar"><div class="bar-fill" style="width:90%"></div></div>
-      </div>
-    </div>
-  </div>
   </div>
 
   <div id="page3" class="a4-page">
@@ -433,13 +520,21 @@
       <img src="dc2.png" class="decorate-three">
     </div>
   </div>
-  
+
   <div id="page4" class="a4-page">
     <div class="frame">
       <img src="pf2.png">
       <div class="background-1"></div>
-      <div class="explain">ผมมีความสนใจด้านเทคโนโลยีและคอมพิวเตอร์มาตั้งแต่เด็ก เพราะเห็นว่าปัจจุบันเทคโนโลยีเข้ามามีบทบาทสำคัญในทุกด้านของชีวิตประจำวัน ไม่ว่าจะเป็นการสื่อสาร การเรียน การทำงาน หรือแม้แต่การใช้ชีวิตทั่วไป คณะเทคโนโลยีสารสนเทศ (IT) จึงเป็นสาขาที่ผมคิดว่าจะสามารถพัฒนาความรู้และทักษะด้านคอมพิวเตอร์ได้อย่างเต็มที่ โดยเฉพาะเรื่องการเขียนโปรแกรม การวิเคราะห์ข้อมูล และการแก้ปัญหาด้วยเทคโนโลยี ซึ่งเป็นทักษะที่สามารถต่อยอดไปสู่การทำงานในอนาคตได้</div>
-      <div class="explain">อีกทั้งผมมองว่าเทคโนโลยีสารสนเทศไม่ใช่แค่เรื่องของคอมพิวเตอร์เท่านั้น แต่ยังเกี่ยวข้องกับการคิดเชิงวิเคราะห์ การสร้างนวัตกรรม และการทำงานเป็นทีมเพื่อแก้ปัญหาที่ซับซ้อน ผมอยากเรียนรู้สิ่งเหล่านี้เพื่อนำไปใช้ประโยชน์ในการสร้างโอกาสใหม่ ๆ ทั้งในด้านการทำงานและการพัฒนาสังคม นอกจากนี้ อาชีพสาย IT ก็เป็นที่ต้องการในตลาดแรงงานสูง และมีความก้าวหน้าอย่างต่อเนื่อง ทำให้ผมมั่นใจว่าการเลือกเรียนคณะนี้จะช่วยให้ผมสามารถสร้างอนาคตที่มั่นคงและเติบโตได้</div>
+      <div class="explain">ผมมีความสนใจด้านเทคโนโลยีและคอมพิวเตอร์มาตั้งแต่เด็ก
+        เพราะเห็นว่าปัจจุบันเทคโนโลยีเข้ามามีบทบาทสำคัญในทุกด้านของชีวิตประจำวัน ไม่ว่าจะเป็นการสื่อสาร การเรียน
+        การทำงาน หรือแม้แต่การใช้ชีวิตทั่วไป คณะเทคโนโลยีสารสนเทศ (IT)
+        จึงเป็นสาขาที่ผมคิดว่าจะสามารถพัฒนาความรู้และทักษะด้านคอมพิวเตอร์ได้อย่างเต็มที่ โดยเฉพาะเรื่องการเขียนโปรแกรม
+        การวิเคราะห์ข้อมูล และการแก้ปัญหาด้วยเทคโนโลยี ซึ่งเป็นทักษะที่สามารถต่อยอดไปสู่การทำงานในอนาคตได้</div>
+      <div class="explain">อีกทั้งผมมองว่าเทคโนโลยีสารสนเทศไม่ใช่แค่เรื่องของคอมพิวเตอร์เท่านั้น
+        แต่ยังเกี่ยวข้องกับการคิดเชิงวิเคราะห์ การสร้างนวัตกรรม และการทำงานเป็นทีมเพื่อแก้ปัญหาที่ซับซ้อน
+        ผมอยากเรียนรู้สิ่งเหล่านี้เพื่อนำไปใช้ประโยชน์ในการสร้างโอกาสใหม่ ๆ ทั้งในด้านการทำงานและการพัฒนาสังคม นอกจากนี้
+        อาชีพสาย IT ก็เป็นที่ต้องการในตลาดแรงงานสูง และมีความก้าวหน้าอย่างต่อเนื่อง
+        ทำให้ผมมั่นใจว่าการเลือกเรียนคณะนี้จะช่วยให้ผมสามารถสร้างอนาคตที่มั่นคงและเติบโตได้</div>
       <div class="reason">เหตุผลที่อยากเข้าคณะนี้</div>
       <img src="dc1.png" class="decorate-four">
     </div>
@@ -469,7 +564,8 @@
       <img src="pf2.png">
       <img src="pf5.png" class="work-photos">
       <div class="work-photos-three-one">โครงการเยาวชนุร่นใหม่รู้กฎหมายอย่างสร้างสรรค์ สมัยชั้นมัธยมศึกษาปีที่5</div>
-      <div class="work-photos-three-two">อบรมเครือข่ายเยาวชน หลักสูตร "พลเมืองดี มีคุณธรรม" สมัยชั้นมัธยมศึกษาปีที่5</div>
+      <div class="work-photos-three-two">อบรมเครือข่ายเยาวชน หลักสูตร "พลเมืองดี มีคุณธรรม" สมัยชั้นมัธยมศึกษาปีที่5
+      </div>
       <img src="dc1.png" class="decorate-seven">
     </div>
   </div>
@@ -521,54 +617,55 @@
   <script>
     let currentPage = 1;
     const totalPages = 11;
-  
+
     function showPage(pageNumber, direction = 'next') {
       for (let i = 1; i <= totalPages; i++) {
         const page = document.getElementById(`page${i}`);
         page.classList.remove('active', 'animate-in', 'animate-out');
       }
-  
+
       const newPage = document.getElementById(`page${pageNumber}`);
       newPage.classList.remove('animate-out');
       newPage.classList.add('active');
-  
+
       // ใส่ animation เข้า
       newPage.classList.add('animate-in');
-  
+
       // ปิด/เปิดปุ่ม
       document.getElementById("prevBtn").disabled = (pageNumber === 1);
       document.getElementById("nextBtn").disabled = (pageNumber === totalPages);
     }
-  
+
     function nextPage() {
       if (currentPage < totalPages) {
         const oldPage = document.getElementById(`page${currentPage}`);
         oldPage.classList.remove('animate-in');
         oldPage.classList.add('animate-out');
-  
+
         setTimeout(() => {
           currentPage++;
           showPage(currentPage, 'next');
         }, 400); // 400ms = เวลา animation
       }
     }
-  
+
     function prevPage() {
       if (currentPage > 1) {
         const oldPage = document.getElementById(`page${currentPage}`);
         oldPage.classList.remove('animate-in');
         oldPage.classList.add('animate-out');
-  
+
         setTimeout(() => {
           currentPage--;
           showPage(currentPage, 'prev');
         }, 400);
       }
     }
-  
+
     // เรียกเมื่อโหลดหน้า
     showPage(currentPage);
   </script>
 
 </body>
+
 </html>
